@@ -1,0 +1,7 @@
+{
+  "name": "ionic-debug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
