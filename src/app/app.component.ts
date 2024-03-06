@@ -1,16 +1,31 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-import { IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet } from '@ionic/angular/standalone';
-import { addIcons } from 'ionicons';
-import { mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, heartOutline, heartSharp, archiveOutline, archiveSharp, trashOutline, trashSharp, warningOutline, warningSharp, bookmarkOutline, bookmarkSharp } from 'ionicons/icons';
+import {CommonModule} from '@angular/common';
+import {Component} from '@angular/core';
+import {RouterLink, RouterLinkActive} from '@angular/router';
+import {addIcons} from 'ionicons';
+import {
+  archiveOutline,
+  archiveSharp,
+  bookmarkOutline,
+  bookmarkSharp,
+  heartOutline,
+  heartSharp,
+  mailOutline,
+  mailSharp,
+  paperPlaneOutline,
+  paperPlaneSharp,
+  trashOutline,
+  trashSharp,
+  warningOutline,
+  warningSharp
+} from 'ionicons/icons';
+import {ALL_IONIC_STANDALONE_IMPORTS} from "./ionic.imports";
 
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, CommonModule, IonApp, IonSplitPane, IonMenu, IonContent, IonList, IonListHeader, IonNote, IonMenuToggle, IonItem, IonIcon, IonLabel, IonRouterOutlet],
+  imports: [RouterLink, RouterLinkActive, CommonModule, ...ALL_IONIC_STANDALONE_IMPORTS],
 })
 export class AppComponent {
   public appPages = [
